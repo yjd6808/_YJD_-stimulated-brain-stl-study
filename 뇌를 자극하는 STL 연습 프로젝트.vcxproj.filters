@@ -8,13 +8,28 @@
     <ClCompile Include="우선순위큐.cpp">
       <Filter>자료구조 제작</Filter>
     </ClCompile>
+    <ClCompile Include="01_이진탐색.cpp">
+      <Filter>탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomGenerator.cpp" />
+    <ClCompile Include="덱.cpp">
+      <Filter>자료구조 제작</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="RandomGenerator.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="자료구조 제작">
       <UniqueIdentifier>{9b7d15c0-2265-4528-9ef0-3eccd57e8f6f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="탐색">
+      <UniqueIdentifier>{fa330c19-4588-49f1-85bd-0990ce4a5d3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

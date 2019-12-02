@@ -11,5 +11,6 @@
 #include <deque>
 #include <cmath>
 #include <functional>
+#include "RandomGenerator.h"
 
 using namespace std;

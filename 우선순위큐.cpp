@@ -60,10 +60,6 @@ public:
 			else
 				break;
 		};
-
-	
-		print();
-		cout << "---------------" << endl;
 	}
 
 	T pop() {
@@ -79,14 +75,11 @@ public:
 		heapArray[size].empty = true;
 		size--;
 
-		while (true) {
-			if (parentIndex >= size)
-				break;
-
+		while (parentIndex <= size) {
 			int leftChildIndex = parentIndex * 2;
 			int rightChildIndex = parentIndex * 2 + 1;
 
-			if (heapArray[leftChildIndex].empty || heapArray[rightChildIndex].empty) {
+			if (heapArray[leftChildIndex].empty == false && heapArray[rightChildIndex].empty) {
 				if (comparator(heapArray[leftChildIndex].data, heapArray[parentIndex].data)) {
 					swap(leftChildIndex, parentIndex);
 					parentIndex = leftChildIndex;
@@ -147,13 +140,12 @@ TEST(우선순위큐) {
 	pq.push(100);
 	pq.push(101);
 	pq.push(105);
+	pq.push(55);
 	pq.push(104);
 	pq.push(103);
+	pq.push(87);
 
-	cout << "비우기 시작" << endl;
 	while (pq.empty() == false) {
 		cout << pq.pop() << endl;
-		pq.print();
-		cout << "-------------";
 	}
 }
